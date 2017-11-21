@@ -1,0 +1,817 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tlc5917
+LIBS:led-breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Raspberry_Pi_2_3 J2
+U 1 1 5A0F0A05
+P 2500 3250
+F 0 "J2" H 3200 2000 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2100 4150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 3500 4500 50  0001 C CNN
+F 3 "" H 2550 3100 50  0001 C CNN
+	1    2500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR01
+U 1 1 5A0F1519
+P 2800 4550
+F 0 "#PWR01" H 2800 4300 50  0001 C CNN
+F 1 "GNDREF" H 2800 4400 50  0000 C CNN
+F 2 "" H 2800 4550 50  0001 C CNN
+F 3 "" H 2800 4550 50  0001 C CNN
+	1    2800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR02
+U 1 1 5A0F1533
+P 5650 2550
+F 0 "#PWR02" H 5650 2300 50  0001 C CNN
+F 1 "GNDREF" H 5650 2400 50  0000 C CNN
+F 2 "" H 5650 2550 50  0001 C CNN
+F 3 "" H 5650 2550 50  0001 C CNN
+	1    5650 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5A0F1AEE
+P 9200 2600
+F 0 "R5" V 9280 2600 50  0000 C CNN
+F 1 "R" V 9200 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9130 2600 50  0001 C CNN
+F 3 "" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 5A0F1B21
+P 9600 2600
+F 0 "R6" V 9680 2600 50  0000 C CNN
+F 1 "R" V 9600 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9530 2600 50  0001 C CNN
+F 3 "" H 9600 2600 50  0001 C CNN
+	1    9600 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 5A0F1B4A
+P 10000 2600
+F 0 "R7" V 10080 2600 50  0000 C CNN
+F 1 "R" V 10000 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9930 2600 50  0001 C CNN
+F 3 "" H 10000 2600 50  0001 C CNN
+	1    10000 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R8
+U 1 1 5A0F1B79
+P 10400 2600
+F 0 "R8" V 10480 2600 50  0000 C CNN
+F 1 "R" V 10400 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10330 2600 50  0001 C CNN
+F 3 "" H 10400 2600 50  0001 C CNN
+	1    10400 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 5A0F1BAE
+P 10800 2600
+F 0 "R9" V 10880 2600 50  0000 C CNN
+F 1 "R" V 10800 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10730 2600 50  0001 C CNN
+F 3 "" H 10800 2600 50  0001 C CNN
+	1    10800 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5A11B4C0
+P 3650 1650
+F 0 "J4" H 3650 1750 50  0000 C CNN
+F 1 "I2C" H 3650 1450 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 3650 1650 50  0001 C CNN
+F 3 "" H 3650 1650 50  0001 C CNN
+	1    3650 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5A11BCA7
+P 10950 2850
+F 0 "#PWR03" H 10950 2700 50  0001 C CNN
+F 1 "+5V" H 10950 2990 50  0000 C CNN
+F 2 "" H 10950 2850 50  0001 C CNN
+F 3 "" H 10950 2850 50  0001 C CNN
+	1    10950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 5A11BCD3
+P 6900 2550
+F 0 "#PWR04" H 6900 2400 50  0001 C CNN
+F 1 "+5V" H 6900 2690 50  0000 C CNN
+F 2 "" H 6900 2550 50  0001 C CNN
+F 3 "" H 6900 2550 50  0001 C CNN
+	1    6900 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 5A11BCFF
+P 2400 1950
+F 0 "#PWR05" H 2400 1800 50  0001 C CNN
+F 1 "+5V" H 2400 2090 50  0000 C CNN
+F 2 "" H 2400 1950 50  0001 C CNN
+F 3 "" H 2400 1950 50  0001 C CNN
+	1    2400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J5
+U 1 1 5A11C3B3
+P 3850 3950
+F 0 "J5" H 3850 4050 50  0000 C CNN
+F 1 "Serial" H 3850 3750 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 3850 3950 50  0001 C CNN
+F 3 "" H 3850 3950 50  0001 C CNN
+	1    3850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J11
+U 1 1 5A11C603
+P 9100 2150
+F 0 "J11" H 9100 2250 50  0000 C CNN
+F 1 "LED4" H 9100 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 9100 2150 50  0001 C CNN
+F 3 "" H 9100 2150 50  0001 C CNN
+	1    9100 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J12
+U 1 1 5A11C63E
+P 9500 2150
+F 0 "J12" H 9500 2250 50  0000 C CNN
+F 1 "LED5" H 9500 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 9500 2150 50  0001 C CNN
+F 3 "" H 9500 2150 50  0001 C CNN
+	1    9500 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J13
+U 1 1 5A11C67F
+P 9900 2150
+F 0 "J13" H 9900 2250 50  0000 C CNN
+F 1 "LED6" H 9900 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 9900 2150 50  0001 C CNN
+F 3 "" H 9900 2150 50  0001 C CNN
+	1    9900 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J14
+U 1 1 5A11C6BE
+P 10300 2150
+F 0 "J14" H 10300 2250 50  0000 C CNN
+F 1 "LED7" H 10300 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 10300 2150 50  0001 C CNN
+F 3 "" H 10300 2150 50  0001 C CNN
+	1    10300 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J15
+U 1 1 5A11C705
+P 10700 2150
+F 0 "J15" H 10700 2250 50  0000 C CNN
+F 1 "LED8" H 10700 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 10700 2150 50  0001 C CNN
+F 3 "" H 10700 2150 50  0001 C CNN
+	1    10700 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TLC5917 U2
+U 1 1 5A0F131D
+P 6300 3450
+F 0 "U2" H 6300 3350 60  0000 C CNN
+F 1 "TLC5917" H 6300 3450 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W10.16mm" H 6300 3450 60  0001 C CNN
+F 3 "" H 6300 3450 60  0001 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 8150 7650 0    60   ~ 0
+Completed 19.11.2017
+Text Notes 7350 7500 0    60   ~ 0
+Raspberry PI breakout for Infected NFC devices
+Text Notes 7000 6700 0    60   ~ 0
+Author: Liam "petterroea" Svanåsbakken Crouch
+Text Notes 8700 4450 0    60   ~ 0
+Notes:\n\nThe TLC5917 supports error detection\nPlease read the datasheet for more info\nThe LED's have a 5V power supply. 
+$Comp
+L R R1
+U 1 1 5A11E6AD
+P 6350 2300
+F 0 "R1" V 6430 2300 50  0000 C CNN
+F 1 "R" V 6350 2300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6280 2300 50  0001 C CNN
+F 3 "" H 6350 2300 50  0001 C CNN
+	1    6350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L MFRC-522 U1
+U 1 1 5A14DEC9
+P 5800 5300
+F 0 "U1" H 5800 5250 60  0000 C CNN
+F 1 "MFRC-522" H 5800 5150 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 5800 5300 60  0001 C CNN
+F 3 "" H 5800 5300 60  0001 C CNN
+	1    5800 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR06
+U 1 1 5A14EBDE
+P 2700 1950
+F 0 "#PWR06" H 2700 1800 50  0001 C CNN
+F 1 "+3.3V" H 2700 2090 50  0000 C CNN
+F 2 "" H 2700 1950 50  0001 C CNN
+F 3 "" H 2700 1950 50  0001 C CNN
+	1    2700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 5A14F2FE
+P 5000 4900
+F 0 "#PWR07" H 5000 4750 50  0001 C CNN
+F 1 "+3.3V" H 5000 5040 50  0000 C CNN
+F 2 "" H 5000 4900 50  0001 C CNN
+F 3 "" H 5000 4900 50  0001 C CNN
+	1    5000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR08
+U 1 1 5A14F33E
+P 5200 4900
+F 0 "#PWR08" H 5200 4650 50  0001 C CNN
+F 1 "GNDREF" H 5200 4750 50  0000 C CNN
+F 2 "" H 5200 4900 50  0001 C CNN
+F 3 "" H 5200 4900 50  0001 C CNN
+	1    5200 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDREF #PWR09
+U 1 1 5A14FBBE
+P 2100 4550
+F 0 "#PWR09" H 2100 4300 50  0001 C CNN
+F 1 "GNDREF" H 2100 4400 50  0000 C CNN
+F 2 "" H 2100 4550 50  0001 C CNN
+F 3 "" H 2100 4550 50  0001 C CNN
+	1    2100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J6
+U 1 1 5A1538BA
+P 4050 1650
+F 0 "J6" H 4050 1750 50  0000 C CNN
+F 1 "I2C" H 4050 1450 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4050 1650 50  0001 C CNN
+F 3 "" H 4050 1650 50  0001 C CNN
+	1    4050 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X03 J3
+U 1 1 5A1540E9
+P 3550 5300
+F 0 "J3" H 3550 5500 50  0000 C CNN
+F 1 "POWER" V 3650 5300 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 3550 5300 50  0001 C CNN
+F 3 "" H 3550 5300 50  0001 C CNN
+	1    3550 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR010
+U 1 1 5A15490C
+P 3450 5100
+F 0 "#PWR010" H 3450 4950 50  0001 C CNN
+F 1 "+3.3V" H 3450 5240 50  0000 C CNN
+F 2 "" H 3450 5100 50  0001 C CNN
+F 3 "" H 3450 5100 50  0001 C CNN
+	1    3450 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR011
+U 1 1 5A154950
+P 3550 5100
+F 0 "#PWR011" H 3550 4850 50  0001 C CNN
+F 1 "GNDREF" H 3550 4950 50  0000 C CNN
+F 2 "" H 3550 5100 50  0001 C CNN
+F 3 "" H 3550 5100 50  0001 C CNN
+	1    3550 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 5A154994
+P 3650 5100
+F 0 "#PWR012" H 3650 4950 50  0001 C CNN
+F 1 "+5V" H 3650 5240 50  0000 C CNN
+F 2 "" H 3650 5100 50  0001 C CNN
+F 3 "" H 3650 5100 50  0001 C CNN
+	1    3650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J7
+U 1 1 5A15B611
+P 4450 1650
+F 0 "J7" H 4450 1750 50  0000 C CNN
+F 1 "I2C" H 4450 1450 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4450 1650 50  0001 C CNN
+F 3 "" H 4450 1650 50  0001 C CNN
+	1    4450 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J10
+U 1 1 5A11C5BC
+P 8700 2150
+F 0 "J10" H 8700 2250 50  0000 C CNN
+F 1 "LED3" H 8700 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8700 2150 50  0001 C CNN
+F 3 "" H 8700 2150 50  0001 C CNN
+	1    8700 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J9
+U 1 1 5A11C575
+P 8300 2150
+F 0 "J9" H 8300 2250 50  0000 C CNN
+F 1 "LED2" H 8300 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8300 2150 50  0001 C CNN
+F 3 "" H 8300 2150 50  0001 C CNN
+	1    8300 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J8
+U 1 1 5A11C518
+P 7900 2150
+F 0 "J8" H 7900 2250 50  0000 C CNN
+F 1 "LED1" H 7900 1950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7900 2150 50  0001 C CNN
+F 3 "" H 7900 2150 50  0001 C CNN
+	1    7900 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A0F1A27
+P 8000 2600
+F 0 "R2" V 8080 2600 50  0000 C CNN
+F 1 "R" V 8000 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7930 2600 50  0001 C CNN
+F 3 "" H 8000 2600 50  0001 C CNN
+	1    8000 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A0F1A74
+P 8400 2600
+F 0 "R3" V 8480 2600 50  0000 C CNN
+F 1 "R" V 8400 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8330 2600 50  0001 C CNN
+F 3 "" H 8400 2600 50  0001 C CNN
+	1    8400 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A0F1AC3
+P 8800 2600
+F 0 "R4" V 8880 2600 50  0000 C CNN
+F 1 "R" V 8800 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8730 2600 50  0001 C CNN
+F 3 "" H 8800 2600 50  0001 C CNN
+	1    8800 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 3150 9900 3150
+Wire Wire Line
+	6900 3050 10300 3050
+Wire Wire Line
+	6900 2950 10700 2950
+Wire Wire Line
+	3400 2850 5750 2850
+Wire Wire Line
+	5750 2750 5100 2750
+Wire Wire Line
+	7350 1250 7350 2750
+Wire Wire Line
+	7350 2750 6900 2750
+Wire Wire Line
+	3400 3950 3650 3950
+Wire Wire Line
+	3650 4050 3400 4050
+Wire Wire Line
+	5750 3250 5750 3650
+Wire Wire Line
+	5750 3150 5650 3150
+Wire Wire Line
+	5550 3050 5750 3050
+Wire Wire Line
+	5450 2950 5750 2950
+Wire Wire Line
+	6900 3250 9500 3250
+Wire Wire Line
+	8000 2850 8000 2750
+Wire Wire Line
+	10800 2850 10800 2750
+Wire Wire Line
+	10400 2750 10400 2850
+Connection ~ 10400 2850
+Wire Wire Line
+	10000 2750 10000 2850
+Connection ~ 10000 2850
+Wire Wire Line
+	9600 2750 9600 2850
+Connection ~ 9600 2850
+Connection ~ 10800 2850
+Wire Wire Line
+	9200 2750 9200 2850
+Connection ~ 9200 2850
+Wire Wire Line
+	8800 2750 8800 2850
+Connection ~ 8800 2850
+Wire Wire Line
+	8400 2750 8400 2850
+Connection ~ 8400 2850
+Wire Wire Line
+	8000 2450 8000 2350
+Wire Wire Line
+	8400 2450 8400 2350
+Wire Wire Line
+	8800 2450 8800 2350
+Wire Wire Line
+	9200 2450 9200 2350
+Wire Wire Line
+	9600 2450 9600 2350
+Wire Wire Line
+	10000 2450 10000 2350
+Wire Wire Line
+	10400 2450 10400 2350
+Wire Wire Line
+	10800 2450 10800 2350
+Wire Wire Line
+	10700 2950 10700 2350
+Wire Wire Line
+	10300 3050 10300 2350
+Wire Wire Line
+	9900 3150 9900 2350
+Wire Wire Line
+	9500 3250 9500 2350
+Wire Wire Line
+	5450 3950 7900 3950
+Wire Wire Line
+	7900 3950 7900 2350
+Wire Wire Line
+	5550 3850 8300 3850
+Wire Wire Line
+	8300 3850 8300 2350
+Wire Wire Line
+	5650 3750 8700 3750
+Wire Wire Line
+	8700 3750 8700 2350
+Wire Wire Line
+	5750 3650 9100 3650
+Wire Wire Line
+	9100 3650 9100 2350
+Wire Wire Line
+	6900 2650 7250 2650
+Wire Wire Line
+	7250 2650 7250 2300
+Wire Wire Line
+	7250 2300 6500 2300
+Wire Wire Line
+	6200 2300 5700 2300
+Wire Wire Line
+	5700 2300 5700 2550
+Wire Wire Line
+	5650 2550 5750 2550
+Connection ~ 5700 2550
+Wire Wire Line
+	5650 3150 5650 3750
+Wire Wire Line
+	5550 3850 5550 3050
+Wire Wire Line
+	5450 3950 5450 2950
+Wire Wire Line
+	3400 2350 3650 2350
+Wire Wire Line
+	3650 2350 3650 1850
+Wire Wire Line
+	4050 1850 4050 1950
+Wire Wire Line
+	3650 1950 4450 1950
+Connection ~ 3650 1950
+Wire Wire Line
+	3400 2450 3750 2450
+Wire Wire Line
+	3750 2450 3750 1850
+Wire Wire Line
+	4150 1850 4150 2050
+Wire Wire Line
+	3750 2050 4550 2050
+Connection ~ 3750 2050
+Wire Wire Line
+	5700 4900 5700 4100
+Wire Wire Line
+	5700 4100 4700 4100
+Wire Wire Line
+	4700 4100 4700 3150
+Wire Wire Line
+	4700 3150 3400 3150
+Wire Wire Line
+	5600 4900 5600 4200
+Wire Wire Line
+	5600 4200 4600 4200
+Wire Wire Line
+	4600 4200 4600 3450
+Wire Wire Line
+	4600 3450 3400 3450
+Wire Wire Line
+	3400 3350 4800 3350
+Wire Wire Line
+	4800 3350 4800 4300
+Wire Wire Line
+	4800 4300 5500 4300
+Wire Wire Line
+	5500 4300 5500 4900
+Wire Wire Line
+	3400 3250 4900 3250
+Wire Wire Line
+	4900 3250 4900 4400
+Wire Wire Line
+	4900 4400 5400 4400
+Wire Wire Line
+	5400 4400 5400 4900
+Wire Wire Line
+	1600 3450 1500 3450
+Wire Wire Line
+	1500 3450 1500 4800
+Wire Wire Line
+	1500 4800 4600 4800
+Wire Wire Line
+	4600 4800 4600 4550
+Wire Wire Line
+	4600 4550 5100 4550
+Wire Wire Line
+	5100 4550 5100 4900
+Wire Wire Line
+	1600 2950 1200 2950
+Wire Wire Line
+	1200 2950 1200 1150
+Wire Wire Line
+	1200 1150 5000 1150
+Wire Wire Line
+	1600 2850 1300 2850
+Wire Wire Line
+	1300 2850 1300 1250
+Wire Wire Line
+	1300 1250 7350 1250
+Wire Wire Line
+	1600 3050 1400 3050
+Wire Wire Line
+	1400 3050 1400 1350
+Wire Wire Line
+	1400 1350 5100 1350
+Wire Wire Line
+	5100 1350 5100 2750
+Wire Wire Line
+	5750 2650 5000 2650
+Wire Wire Line
+	5000 2650 5000 1150
+Wire Wire Line
+	4850 2750 3400 2750
+Wire Wire Line
+	4850 2750 4850 2150
+Wire Wire Line
+	4850 2150 7500 2150
+Wire Wire Line
+	7500 2150 7500 2850
+Wire Wire Line
+	7500 2850 6900 2850
+Wire Wire Line
+	4450 1950 4450 1850
+Connection ~ 4050 1950
+Wire Wire Line
+	4550 2050 4550 1850
+Connection ~ 4150 2050
+Wire Wire Line
+	8000 2850 10950 2850
+Wire Wire Line
+	1200 3650 1600 3650
+Wire Wire Line
+	1600 3150 1300 3150
+$Comp
+L GNDREF #PWR013
+U 1 1 5A177E82
+P 1000 2350
+F 0 "#PWR013" H 1000 2100 50  0001 C CNN
+F 1 "GNDREF" H 1000 2200 50  0000 C CNN
+F 2 "" H 1000 2350 50  0001 C CNN
+F 3 "" H 1000 2350 50  0001 C CNN
+	1    1000 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDREF #PWR014
+U 1 1 5A177EEA
+P 1050 3100
+F 0 "#PWR014" H 1050 2850 50  0001 C CNN
+F 1 "GNDREF" H 1050 2950 50  0000 C CNN
+F 2 "" H 1050 3100 50  0001 C CNN
+F 3 "" H 1050 3100 50  0001 C CNN
+	1    1050 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDREF #PWR015
+U 1 1 5A178044
+P 1100 3750
+F 0 "#PWR015" H 1100 3500 50  0001 C CNN
+F 1 "GNDREF" H 1100 3600 50  0000 C CNN
+F 2 "" H 1100 3750 50  0001 C CNN
+F 3 "" H 1100 3750 50  0001 C CNN
+	1    1100 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X04 J1
+U 1 1 5A17937C
+P 900 4350
+F 0 "J1" H 900 4600 50  0000 C CNN
+F 1 "LED_STRIP" V 1000 4350 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 900 4350 50  0001 C CNN
+F 3 "" H 900 4350 50  0001 C CNN
+	1    900  4350
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR016
+U 1 1 5A179D4C
+P 1050 4150
+F 0 "#PWR016" H 1050 4000 50  0001 C CNN
+F 1 "+5V" H 1050 4290 50  0000 C CNN
+F 2 "" H 1050 4150 50  0001 C CNN
+F 3 "" H 1050 4150 50  0001 C CNN
+	1    1050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  2350 500  2350
+Wire Wire Line
+	500  2350 500  4150
+Wire Wire Line
+	500  4150 750  4150
+Wire Wire Line
+	700  3950 950  3950
+Wire Wire Line
+	950  3950 950  4150
+Wire Wire Line
+	850  4150 850  4050
+Wire Wire Line
+	850  4050 600  4050
+$Comp
+L GNDREF #PWR017
+U 1 1 5A17B472
+P 2500 4550
+F 0 "#PWR017" H 2500 4300 50  0001 C CNN
+F 1 "GNDREF" H 2500 4400 50  0000 C CNN
+F 2 "" H 2500 4550 50  0001 C CNN
+F 3 "" H 2500 4550 50  0001 C CNN
+	1    2500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  3950 700  3750
+Wire Wire Line
+	1300 3150 1300 3450
+Wire Wire Line
+	1300 3450 850  3450
+Wire Wire Line
+	600  4050 600  3100
+Wire Wire Line
+	600  3100 650  3100
+Wire Wire Line
+	1200 3650 1200 3000
+Wire Wire Line
+	1200 3000 1050 3000
+Wire Wire Line
+	1050 3000 1050 2800
+Wire Wire Line
+	1050 2800 800  2800
+Wire Wire Line
+	1600 2650 1500 2650
+Wire Wire Line
+	1500 2650 1500 2050
+Wire Wire Line
+	1500 2050 750  2050
+$Comp
+L IRLB8721PBF Q1
+U 1 1 5A181E49
+P 800 2250
+F 0 "Q1" H 1050 2325 50  0000 L CNN
+F 1 "MOSFET" H 1050 2250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 1050 2175 50  0001 L CIN
+F 3 "" H 800 2250 50  0001 L CNN
+	1    800  2250
+	0    1    1    0   
+$EndComp
+$Comp
+L IRLB8721PBF Q2
+U 1 1 5A189676
+P 850 3000
+F 0 "Q2" H 1100 3075 50  0000 L CNN
+F 1 "MOSFET" H 1100 3000 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 1100 2925 50  0001 L CIN
+F 3 "" H 850 3000 50  0001 L CNN
+	1    850  3000
+	0    1    1    0   
+$EndComp
+$Comp
+L IRLB8721PBF Q3
+U 1 1 5A189980
+P 900 3650
+F 0 "Q3" H 1150 3725 50  0000 L CNN
+F 1 "MOSFET" H 1150 3650 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 1150 3575 50  0001 L CIN
+F 3 "" H 900 3650 50  0001 L CNN
+	1    900  3650
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
