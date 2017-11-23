@@ -713,23 +713,23 @@ $EndComp
 $Comp
 L CONN_01X04 J1
 U 1 1 5A17937C
-P 900 4350
-F 0 "J1" H 900 4600 50  0000 C CNN
-F 1 "LED_STRIP" V 1000 4350 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 900 4350 50  0001 C CNN
-F 3 "" H 900 4350 50  0001 C CNN
-	1    900  4350
+P 1000 5000
+F 0 "J1" H 1000 5250 50  0000 C CNN
+F 1 "LED_STRIP" V 1100 5000 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 1000 5000 50  0001 C CNN
+F 3 "" H 1000 5000 50  0001 C CNN
+	1    1000 5000
 	0    1    1    0   
 $EndComp
 $Comp
 L +5V #PWR016
 U 1 1 5A179D4C
-P 1050 4150
-F 0 "#PWR016" H 1050 4000 50  0001 C CNN
-F 1 "+5V" H 1050 4290 50  0000 C CNN
-F 2 "" H 1050 4150 50  0001 C CNN
-F 3 "" H 1050 4150 50  0001 C CNN
-	1    1050 4150
+P 1150 4800
+F 0 "#PWR016" H 1150 4650 50  0001 C CNN
+F 1 "+5V" H 1150 4940 50  0000 C CNN
+F 2 "" H 1150 4800 50  0001 C CNN
+F 3 "" H 1150 4800 50  0001 C CNN
+	1    1150 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -737,15 +737,9 @@ Wire Wire Line
 Wire Wire Line
 	500  2350 500  4150
 Wire Wire Line
-	500  4150 750  4150
+	700  3950 1150 3950
 Wire Wire Line
-	700  3950 950  3950
-Wire Wire Line
-	950  3950 950  4150
-Wire Wire Line
-	850  4150 850  4050
-Wire Wire Line
-	850  4050 600  4050
+	600  4050 900  4050
 $Comp
 L GNDREF #PWR017
 U 1 1 5A17B472
@@ -814,4 +808,57 @@ F 3 "" H 900 3650 50  0001 L CNN
 	1    900  3650
 	0    1    1    0   
 $EndComp
+$Comp
+L Fuse F1
+U 1 1 5A160AF0
+P 650 4300
+F 0 "F1" V 730 4300 50  0000 C CNN
+F 1 "Fuse" V 575 4300 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" V 580 4300 50  0001 C CNN
+F 3 "" H 650 4300 50  0001 C CNN
+	1    650  4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F2
+U 1 1 5A160B55
+P 900 4300
+F 0 "F2" V 980 4300 50  0000 C CNN
+F 1 "Fuse" V 825 4300 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" V 830 4300 50  0001 C CNN
+F 3 "" H 900 4300 50  0001 C CNN
+	1    900  4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F3
+U 1 1 5A160BA8
+P 1150 4300
+F 0 "F3" V 1230 4300 50  0000 C CNN
+F 1 "Fuse" V 1075 4300 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" V 1080 4300 50  0001 C CNN
+F 3 "" H 1150 4300 50  0001 C CNN
+	1    1150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3950 1150 4150
+Wire Wire Line
+	900  4050 900  4150
+Wire Wire Line
+	500  4150 650  4150
+Wire Wire Line
+	650  4450 650  4800
+Wire Wire Line
+	650  4800 850  4800
+Wire Wire Line
+	900  4450 900  4700
+Wire Wire Line
+	900  4700 950  4700
+Wire Wire Line
+	950  4700 950  4800
+Wire Wire Line
+	1150 4450 1050 4450
+Wire Wire Line
+	1050 4450 1050 4800
 $EndSCHEMATC
