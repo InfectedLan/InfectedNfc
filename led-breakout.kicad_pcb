@@ -3,9 +3,9 @@
   (general
     (links 69)
     (no_connects 0)
-    (area 125.645 87.7 188.533811 155.37)
+    (area 125.645 87.63 188.533811 155.37)
     (thickness 1.6)
-    (drawings 19)
+    (drawings 21)
     (tracks 316)
     (zones 0)
     (modules 34)
@@ -14,14 +14,14 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user)
+    (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x000f0_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -87,7 +87,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory manufacture_v3/))
+      (outputdirectory manufacture_v4/))
   )
 
   (net 0 "")
@@ -3346,7 +3346,13 @@
       (net 62 "Net-(F3-Pad2)"))
   )
 
-  (gr_text BOTTOM (at 174.625 88.9) (layer B.SilkS)
+  (gr_text Serial: (at 139.7 135.89) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
+  (gr_text "Assembled by:" (at 134.62 123.19) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
+  (gr_text BOTTOM (at 151.13 89.535) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_text TOP (at 176.53 88.9) (layer F.SilkS)
@@ -4360,6 +4366,36 @@
         (xy 180.467 121.793) (xy 180.487 121.793) (xy 180.487 122.047) (xy 180.467 122.047) (xy 180.467 122.067)
         (xy 180.213 122.067) (xy 180.213 122.047) (xy 180.193 122.047) (xy 180.193 121.793) (xy 180.213 121.793)
         (xy 180.213 121.773) (xy 180.467 121.773)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.SilkS) (tstamp 5A2852DE) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 126.365 125.095) (xy 142.875 125.095) (xy 142.875 133.985) (xy 126.365 133.985)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 142.748 133.858) (xy 126.492 133.858) (xy 126.492 125.222) (xy 142.748 125.222)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.SilkS) (tstamp 5A285330) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 126.365 137.795) (xy 142.875 137.795) (xy 142.875 144.78) (xy 126.365 144.78)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 142.748 144.653) (xy 126.492 144.653) (xy 126.492 137.922) (xy 142.748 137.922)
       )
     )
   )
