@@ -2,7 +2,7 @@
 
 ## Rationale
 
-Infected wishes to develop an NFC infrastructure due to new wishes from government, as well as internal needs. For this platform to be developed as flawlessly as possible, the amount constant design features between the different NFC units needs to be as large as possible. For this reason, the raspberry pi(which serves as the microcontroller on the platform), should have a one-size-fits-all breakout board.
+Infected wishes to develop an NFC infrastructure due to new wishes from the local authorities, as well as internal needs. For this platform to be developed as flawlessly as possible, the amount constant design features between the different NFC units needs to be as large as possible. For this reason, the raspberry pi(which serves as the microcontroller on the platform), should have a one-size-fits-all breakout board.
 
 ## Board summary
 
@@ -112,4 +112,7 @@ The breakout board should accomodate to LED's, as well as supplying a breakout f
  * Finalized for production
  * Added fuse and MOSFETs for LED strip
  * Added credits and decoration
+
+### Revision 4
+
  * Added Signature pane and serial number pane
